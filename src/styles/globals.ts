@@ -71,14 +71,6 @@ export const globalStyles = globalCss({
     lineHeight: 'calc(1em + 0.5rem)',
   },
 
-  ':where(hr)': {
-    border: 'none',
-    borderBlockStart: '1px solid',
-    blockSize: 0,
-    color: 'inherit',
-    overflow: 'visible',
-  },
-
   ':where(:focus-visible)': {
     outline: '2px solid $colors$yellow500',
     outlineOffset: '2px',
@@ -116,5 +108,13 @@ export const globalStyles = globalCss({
   '#__next': {
     minBlockSize: '100%',
     position: 'relative',
+  },
+
+  ':where(hr)': {
+    border: 'none',
+    borderBlockStart: '1px solid',
+    blockSize: 0,
+    color: '$gray200',
+    overflow: 'visible',
   },
 })

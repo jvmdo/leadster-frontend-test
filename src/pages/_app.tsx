@@ -1,8 +1,8 @@
 // eslint-disable-next-line camelcase
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import type { AppProps } from 'next/app'
-import { DefaultLayout } from '@/layouts/DefaultLayout'
 import { globalStyles } from '@/styles/globals'
+import { DefaultLayout } from '@/layouts/DefaultLayout'
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 

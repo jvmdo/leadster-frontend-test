@@ -52,6 +52,10 @@ export type FluidSpaceSize = [
   Units,
 ]
 
+/* 
+  Return a CSS `clamp()` calculated with the arguments in `values`
+  It accepts both Stitches tokens and unit-less values
+*/
 export function clamp(values: FluidFontSize | FluidSpaceSize) {
   // '-1' means negative margins
   const factor = values[0] === '-1'

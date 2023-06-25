@@ -9,14 +9,16 @@ export const { styled, globalCss, keyframes, getCssText, config } =
       },
 
       fontSizes: {
-        xs: '0.75',
-        base: '1',
-        lg: '1.125',
-        xl: '1.25',
-        '2xl': '1.5',
-        '5xl': '3',
-        '6xl': '3.75',
-        '8xl': '6',
+        xs: '0.75', // 12 px
+        small: '0.875', // 14 px
+        base: '1', // 16 px
+        lg: '1.125', // 18px
+        xl: '1.25', // 20px
+        '2xl': '1.5', // 24px
+        '3xl': '2.25', // 36px
+        '5xl': '3', // 48px
+        '6xl': '3.75', // 60px
+        '8xl': '6', // 96px
       },
 
       fontWeights: {
@@ -25,26 +27,32 @@ export const { styled, globalCss, keyframes, getCssText, config } =
         bold: 700,
       },
 
+      lineHeights: {
+        small: 1.2,
+        base: 1.5,
+      },
+
       radii: {
         full: '9999px',
+        pill: '100vw',
       },
 
       space: {
-        1: '0.25',
-        2: '0.5',
-        3: '0.75',
-        4: '1',
-        5: '1.25',
-        6: '1.5',
-        7: '1.75',
-        8: '2',
-        9: '2.25',
-        10: '2.5',
-        12: '3',
-        15: '3.75',
-        18: '4.5',
-        20: '5',
-        23: '5.75',
+        1: '0.25', // 4px
+        2: '0.5', // 8px
+        3: '0.75', // 12 px
+        4: '1', // 16 px
+        5: '1.25', // 20px
+        6: '1.5', // 24px
+        7: '1.75', // 28px
+        8: '2', // 32px
+        9: '2.25', // 36px
+        10: '2.5', // 40px
+        12: '3', // 48px
+        15: '3.75', // 56px
+        18: '4.5', // 72px
+        20: '5', // 80px
+        23: '5.75', // 92px
       },
 
       colors: {
@@ -156,8 +164,16 @@ export const { styled, globalCss, keyframes, getCssText, config } =
         blockSize: clamp(values),
       }),
 
+      fluidHeight: (values: FluidSpaceSize) => ({
+        height: clamp(values),
+      }),
+
       fluidInlineSize: (values: FluidSpaceSize) => ({
         inlineSize: clamp(values),
+      }),
+
+      fluidWidth: (values: FluidSpaceSize) => ({
+        width: clamp(values),
       }),
     },
   } as const)
