@@ -82,6 +82,15 @@ export const { styled, globalCss, keyframes, getCssText, config } =
         secondary: '$gray500',
       },
 
+      shadows: {
+        default: `
+          0 2px 4px color-mix(in srgb, $colors$gray300, transparent 80%),
+          0 4px 8px color-mix(in srgb, $colors$gray300, transparent 80%),
+          0 6px 12px color-mix(in srgb, $colors$gray300, transparent 80%),
+          0 8px 16px color-mix(in srgb, $colors$gray300, transparent 80%)
+        `,
+      },
+
       transitions: {
         action: '150ms cubic-bezier(0.25, 0.1, 0.25, 1.0)',
         overlay: '250ms cubic-bezier(0.42, 0, 0.58, 1)',
