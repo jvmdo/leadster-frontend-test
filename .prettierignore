@@ -1,0 +1,11 @@
+# @rocketseat/eslint-config uses a modified prettier
+# Either disabled formatting
+# *.ts
+# *.tsx
+# Or set eslint as fomatter on VS Code
+#"[typescript]": {
+#    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+#  },
+#"[typescriptreact]": {
+#  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+#},

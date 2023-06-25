@@ -15,7 +15,8 @@ export const { styled, globalCss, keyframes, getCssText, config } =
         lg: '1.125', // 18px
         xl: '1.25', // 20px
         '2xl': '1.5', // 24px
-        '3xl': '2.25', // 36px
+        '3xl': '2', // 32px
+        '4xl': '2.5', // 40px
         '5xl': '3', // 48px
         '6xl': '3.75', // 60px
         '8xl': '6', // 96px
