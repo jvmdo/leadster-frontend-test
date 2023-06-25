@@ -8,6 +8,6 @@ export const ContentBox = styled('div', {
   // Set `max-block-size` and center the container
   marginInline: 'max(0.75rem, 50% - $$maxBlockSize / 2)',
 
-  display: 'grid',
-  placeContent: 'center',
+  // display: 'grid',
+  // placeContent: 'center',
 })

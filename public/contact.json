@@ -1,0 +1,27 @@
+{
+  "title": "Siga a Leadster",
+  "socials": [
+    {
+      "name": "linkedin",
+      "href": "https://br.linkedin.com/company/leadster-platform"
+    },
+    {
+      "name": "facebook",
+      "href": "https://pt-br.facebook.com/leadsterplatform/"
+    },
+    {
+      "name": "instagram",
+      "href": "https://www.instagram.com/leadster.com.br/"
+    }
+  ],
+  "contacts": {
+    "email": {
+      "name": "E-mail",
+      "href": "contato@leadster.com.br"
+    },
+    "phone": {
+      "name": "Telefone",
+      "href": "(42) 98828-9851"
+    }
+  }
+}
