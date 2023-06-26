@@ -29,6 +29,7 @@ export function Pagination({
   }, [range, page, setPage])
 
   function handleSetPage(currentPage: number) {
+    document.querySelector('#main-content')?.scrollIntoView({ block: 'start' })
     setPage(currentPage)
   }
 
