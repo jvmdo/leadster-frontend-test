@@ -117,4 +117,8 @@ export const globalStyles = globalCss({
     color: '$gray200',
     overflow: 'visible',
   },
+
+  '::selection': {
+    backgroundColor: 'color-mix(in srgb, $gray500, transparent 50%)',
+  },
 })

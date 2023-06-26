@@ -6,12 +6,27 @@ import {
 } from './styles'
 import Image from 'next/image'
 import { BrandButton } from '@/components/BrandButton'
+import { MainContent } from './components/MainContent'
+import videos from '../../../public/videos.json'
 
 export default function Home() {
   const rating = 4.9
+  const filterItems = [
+    'Agências',
+    'Chatbot',
+    'Marketing Digital',
+    'Geração de Leads',
+    'Mídia Paga',
+  ]
+  const sortItems = ['Data de Publicação', 'A-Z']
 
   return (
     <>
+      <MainContent
+        filterItems={filterItems}
+        sortItems={sortItems}
+        videos={videos}
+      />
       <CallToActionContainer>
         <ContentBox>
           <CallToActionHero
