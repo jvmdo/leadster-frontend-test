@@ -12,6 +12,7 @@ import {
 import * as Dialog from '@radix-ui/react-dialog'
 import { X } from '@phosphor-icons/react'
 import { Video } from '@/types'
+import YouTube from 'react-youtube'
 
 interface VideoDialogProps {
   content?: Video
@@ -27,7 +28,7 @@ export function VideoDialog({ content, onContentChange }: VideoDialogProps) {
 
   const hasDownloads = Boolean(content?.downloads.length)
 
-  if (!content) return <></>
+  if (!content) return
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
@@ -38,8 +39,18 @@ export function VideoDialog({ content, onContentChange }: VideoDialogProps) {
               <span>{content.type}: </span>
               {content.title}
             </DialogTitle>
-            <DialogVideo>Oiiiiiiiiiiiiiiiiii</DialogVideo>
-            <DialogDescription>
+            <DialogVideo>
+              <YouTube
+                videoId={content.id}
+                title={content.title}
+                className="youtubeContainer"
+                loading="lazy"
+                opts={{
+                  origin: window.location.origin,
+                }}
+              />
+            </DialogVideo>
+            <DialogDescription as="div">
               <h4>Descrição</h4>
               <p>{content.description}</p>
             </DialogDescription>
@@ -53,6 +64,7 @@ export function VideoDialog({ content, onContentChange }: VideoDialogProps) {
                         <DialogDownloadButton
                           href={href}
                           download
+                          target="_blank"
                           color={color as any}
                         >
                           <span className="icon"></span>

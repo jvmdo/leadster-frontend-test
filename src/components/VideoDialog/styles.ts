@@ -69,10 +69,24 @@ export const DialogTitle = styled(Dialog.Title, {
 export const DialogVideo = styled('section', {
   alignSelf: 'center',
 
-  backgroundColor: '$gray600',
-
   aspectRatio: '16 / 9',
   inlineSize: '$$contentInlineSize',
+
+  '.youtubeContainer': {
+    blockSize: 0,
+    inlineSize: '100%',
+    paddingBottom: '56.25%', // aspect ratio
+
+    position: 'relative',
+  },
+
+  '.youtubeContainer iframe': {
+    blockSize: '100%',
+    inlineSize: '100%',
+
+    position: 'absolute',
+    inset: 0,
+  },
 })
 
 const subTitle = {
