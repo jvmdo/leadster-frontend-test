@@ -94,6 +94,7 @@ export const { styled, globalCss, keyframes, getCssText, config } =
       transitions: {
         action: '150ms cubic-bezier(0.25, 0.1, 0.25, 1.0)',
         overlay: '250ms cubic-bezier(0.42, 0, 0.58, 1)',
+        content: '500ms cubic-bezier(0.23, 1, 0.32, 1)',
       },
     },
 
