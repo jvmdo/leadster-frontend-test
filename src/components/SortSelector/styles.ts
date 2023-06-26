@@ -20,7 +20,8 @@ export const SelectTrigger = styled(Select.SelectTrigger, {
   fluidPaddingBlock: ['$1', '$2'],
   fluidPaddingInline: ['$3', '$5'],
 
-  minInlineSize: '9rem',
+  // From @initial to @xl
+  minInlineSize: 'clamp(10rem, 8.545rem + 7.27vw, 14rem)',
 })
 
 export const SelectIcon = styled(Select.SelectIcon, {
