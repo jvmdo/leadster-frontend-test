@@ -40,12 +40,11 @@ export const CallToActionContainer = styled('section', {
       backgroundColor: '$blue200',
       borderRadius: '5rem',
 
-      aspectRatio: 1.5,
-      '@xl': { aspectRatio: 2 },
-      height: 'calc(50% + 15vw)',
+      aspectRatio: 2,
+      width: '300%',
 
       rotate: '-138.5deg',
-      translate: '-34% 50%',
+      translate: '-29.75% 54%',
     },
   },
 })
