@@ -16,7 +16,7 @@ export function CallToAction({ rating }: CallToActionProps) {
     <CallToActionContainer>
       <ContentBox>
         <CallToActionHero
-          src="/comparativo.png"
+          src="/images/comparativo.png"
           width={739}
           height={687}
           alt="Gráfico comparativo entre os resultados da Leadster e concorrentes. Em 14 dias, a Leadster alcança 450 leads. 220 leads à frente do segundo colocado."

@@ -11,17 +11,17 @@
     "downloads": [
       {
         "name": "comparativo.png",
-        "href": "/comparativo.png",
+        "href": "/images/comparativo.png",
         "color": "blue"
       },
       {
         "name": "selo.png",
-        "href": "/selo.png",
+        "href": "/images/selo.png",
         "color": "green"
       },
       {
         "name": "rating.png",
-        "href": "/rating.webp",
+        "href": "/images/rating.webp",
         "color": "yellow"
       }
     ]
@@ -38,17 +38,17 @@
     "downloads": [
       {
         "name": "selo.png",
-        "href": "/selo.png",
+        "href": "/images/selo.png",
         "color": "green"
       },
       {
         "name": "comparativo.png",
-        "href": "/comparativo.png",
+        "href": "/images/comparativo.png",
         "color": "green"
       },
       {
         "name": "rating.png",
-        "href": "/rating.webp",
+        "href": "/images/rating.webp",
         "color": "blue"
       }
     ]
@@ -65,12 +65,12 @@
     "downloads": [
       {
         "name": "comparativo.png",
-        "href": "/comparativo.png",
+        "href": "/images/comparativo.png",
         "color": "blue"
       },
       {
         "name": "selo.png",
-        "href": "/selo.png",
+        "href": "/images/selo.png",
         "color": "green"
       }
     ]
@@ -87,7 +87,7 @@
     "downloads": [
       {
         "name": "comparativo.png",
-        "href": "/comparativo.png",
+        "href": "/images/comparativo.png",
         "color": "blue"
       }
     ]
@@ -115,12 +115,12 @@
     "downloads": [
       {
         "name": "selo.png",
-        "href": "/selo.png",
+        "href": "/images/selo.png",
         "color": "green"
       },
       {
         "name": "rating.png",
-        "href": "/rating.webp",
+        "href": "/images/rating.webp",
         "color": "yellow"
       }
     ]
@@ -137,7 +137,7 @@
     "downloads": [
       {
         "name": "rating.png",
-        "href": "/rating.webp",
+        "href": "/images/rating.webp",
         "color": "yellow"
       }
     ]
@@ -165,7 +165,7 @@
     "downloads": [
       {
         "name": "selo.png",
-        "href": "/selo.png",
+        "href": "/images/selo.png",
         "color": "green"
       }
     ]
@@ -182,7 +182,7 @@
     "downloads": [
       {
         "name": "selo.png",
-        "href": "/selo.png",
+        "href": "/images/selo.png",
         "color": "green"
       }
     ]
@@ -199,7 +199,7 @@
     "downloads": [
       {
         "name": "rating.png",
-        "href": "/rating.webp",
+        "href": "/images/rating.webp",
         "color": "yellow"
       }
     ]

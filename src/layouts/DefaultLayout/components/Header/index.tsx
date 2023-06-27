@@ -5,7 +5,12 @@ export function Header() {
   return (
     <HeaderContainer>
       <ContentBox>
-        <HeaderLogo src="/logo.png" width={200} height={84} alt="Leadster" />
+        <HeaderLogo
+          src="/images/logo.png"
+          width={200}
+          height={84}
+          alt="Leadster"
+        />
         <HeaderContent>
           <hgroup>
             <p className="bubble">Webinars exclusivos</p>

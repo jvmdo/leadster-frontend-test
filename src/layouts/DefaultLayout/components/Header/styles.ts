@@ -1,6 +1,6 @@
 import { styled } from '@/styles/stitches.config'
 import Image from 'next/image'
-import Lead from 'public/lead.png'
+import Lead from 'public/images/lead.png'
 
 export const HeaderContainer = styled('header', {
   textAlign: 'center',

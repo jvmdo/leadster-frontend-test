@@ -11,7 +11,7 @@ function getBaseUrl(process: any) {
 }
 
 export async function fetchVideos(): Promise<Video[]> {
-  return await (await fetch(`${getBaseUrl(process)}/videos.json`)).json()
+  return await (await fetch(`${getBaseUrl(process)}/data/videos.json`)).json()
 }
 
 export async function fetchFiltersOptions() {

@@ -9,16 +9,21 @@ import {
   FooterSocials,
 } from './styles'
 import { SocialIcon } from '@/components/SocialIcon'
-import linksData from './../../../../../public/links.json'
-import contactsData from './../../../../../public/contact.json'
 import { LinkGroup } from './components/LinkGroup'
+import linksData from './../../../../../public/data/links.json'
+import contactsData from './../../../../../public/data/contact.json'
 
 export function Footer() {
   return (
     <FooterContainer>
       <ContentBox>
         <FooterHead>
-          <Image src="/logo.png" width={268} height={56} alt="Leadster" />
+          <Image
+            src="/images/logo.png"
+            width={268}
+            height={56}
+            alt="Leadster"
+          />
           <p>Transformando visitantes em clientes.</p>
         </FooterHead>
         <FooterContent>
