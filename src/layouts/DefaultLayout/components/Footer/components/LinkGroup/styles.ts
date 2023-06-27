@@ -15,7 +15,6 @@ export const LinkGroupContainer = styled('div', {
   a: {
     color: '$green900',
 
-    overflowX: 'clip',
     transition: 'color $action',
     position: 'relative',
 
