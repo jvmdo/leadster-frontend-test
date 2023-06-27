@@ -15,6 +15,7 @@ import { VideoDialog } from '@/components/VideoDialog'
 import { Video } from '@/types'
 import { videosReducer } from '@/reducers/videos'
 import { ActionTypes } from '@/reducers/actions'
+import { useRows } from '@/hooks/useRows'
 
 interface MainContentProps {
   filterItems: string[]
@@ -31,8 +32,9 @@ export function MainContent({
   const [orderBy, setOrderBy] = useState(sortItems[0])
   const [dialogContent, setDialogContent] = useState<Video | undefined>()
   const [gallery, dispatch] = useReducer(videosReducer, videos)
+  const rowsPerPage = useRows() // It's named "rows" but it acts as "columns" because of `grid`
   const { paginate, page, setPage, controls, controlsLength } =
-    usePagination<Video>(gallery, 9)
+    usePagination<Video>(gallery, rowsPerPage)
 
   function handleChipsInput(chips: string[]) {
     setChips(chips)
@@ -52,6 +54,7 @@ export function MainContent({
 
   function handleSortInput(orderBy: string) {
     setOrderBy(orderBy)
+    setPage(1)
     dispatch({
       type: ActionTypes.SORT,
       payload: { orderBy },
