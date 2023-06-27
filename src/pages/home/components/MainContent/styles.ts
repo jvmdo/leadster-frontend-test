@@ -43,7 +43,7 @@ export const MainContentHeader = styled('header', {
 
 export const MainContentGallery = styled('section', {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(17rem, 1fr))',
+  gridTemplateColumns: 'repeat(auto-fill, minmax(17rem, 1fr))',
   fluidGap: ['$4', '$7'],
   placeItems: 'center',
 

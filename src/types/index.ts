@@ -5,6 +5,8 @@ export type Video = {
   thumbUrl: string
   type: string
   description: string
+  publishedAt: string
+  categories: string[]
   downloads: Array<{
     name: string
     href: string
