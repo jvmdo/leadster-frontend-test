@@ -8,5 +8,34 @@ export const LinkGroupContainer = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     fluidGap: ['$3', '$6'],
+
+    li: { overflow: 'hidden' },
+  },
+
+  a: {
+    color: '$green900',
+
+    overflowX: 'clip',
+    transition: 'color $action',
+    position: 'relative',
+
+    '&::before': {
+      content: '',
+
+      backgroundColor: '$blue400',
+      blockSize: 1,
+
+      position: 'absolute',
+      insetInline: 0,
+      insetBlockEnd: '-0.15ex',
+
+      translate: '-100%',
+      transition: 'translate $action',
+    },
+
+    '&:is(:hover, :focus-visible)': {
+      color: '$blue400',
+      '&::before': { translate: 0 },
+    },
   },
 })

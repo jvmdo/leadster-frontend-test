@@ -21,7 +21,7 @@ export const globalStyles = globalCss({
 
   '@media (prefers-reduced-motion: no-preference)': {
     ':where(html:focus-within)': {
-      scrollBehavior: 'smooth',
+      scrollBehavior: 'smooth !important',
     },
   },
 

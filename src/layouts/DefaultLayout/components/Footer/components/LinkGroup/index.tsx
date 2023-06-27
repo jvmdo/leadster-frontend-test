@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { LinkGroupContainer } from './styles'
 
 interface LinkGroupProps {
@@ -12,7 +13,7 @@ export function LinkGroup({ title, links }: LinkGroupProps) {
       <ul>
         {links.map(({ href, name }) => (
           <li key={name}>
-            <a href={href}>{name}</a>
+            <Link href={href}>{name}</Link>
           </li>
         ))}
       </ul>

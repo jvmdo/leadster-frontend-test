@@ -7,6 +7,9 @@ export const FooterContainer = styled('footer', {
   [`${ContentBox}`]: {
     display: 'grid',
     fluidGap: ['$6', '$10'],
+
+    fluidMarginBlockStart: ['$8', '$15'],
+    fluidMarginBlockEnd: ['$6', '$9'],
   },
 })
 
@@ -30,33 +33,6 @@ export const FooterContent = styled('nav', {
 
   h3: {
     fluidFontSize: ['$base', '$lg'],
-  },
-
-  a: {
-    color: '$green900',
-
-    overflowX: 'clip',
-    transition: 'color $action',
-    position: 'relative',
-
-    '&::before': {
-      content: '',
-
-      backgroundColor: '$blue400',
-      blockSize: 1,
-
-      position: 'absolute',
-      insetInline: 0,
-      insetBlockEnd: '-0.15ex',
-
-      translate: '-100%',
-      transition: 'translate $action',
-    },
-
-    '&:is(:hover, :focus-visible)': {
-      color: '$blue400',
-      '&::before': { translate: 0 },
-    },
   },
 
   span: {
@@ -96,10 +72,9 @@ export const FooterFoot = styled('div', {
 
   fluidPaddingBlock: ['$5', '$9'],
 
-  a: { color: '$blue400' },
-
   position: 'relative',
 
+  // Line separator
   '&::before': {
     content: '',
 
@@ -113,5 +88,17 @@ export const FooterFoot = styled('div', {
 
   display: 'flex',
   flexFlow: 'row wrap',
-  justifyContent: 'space-around',
+  justifyContent: 'space-between',
+  gap: '1rem',
+
+  p: {
+    flex: '1 1 15rem',
+    textWrap: 'balance', // Chrome and Edge only yet
+  },
+
+  '@lg': {
+    p: { flex: 'unset' },
+  },
+
+  a: { color: '$blue400' },
 })
