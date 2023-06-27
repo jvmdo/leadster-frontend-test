@@ -1,6 +1,7 @@
 import { MainContent } from './components/MainContent'
 import { Video } from '@/types'
 import { CallToAction } from './components/CallToAction'
+import { NextSeo } from 'next-seo'
 
 export interface HomeProps {
   videos: Video[]
@@ -17,6 +18,10 @@ export default function Home({
 }: HomeProps) {
   return (
     <>
+      <NextSeo
+        title="Home"
+        description="Menos conversinha, mais conversão. Conheça as estratégias que mudaram o jogo e como aplicá-las em seu negócio"
+      />
       <MainContent
         filterItems={filtersOptions}
         sortItems={sortingOptions}
