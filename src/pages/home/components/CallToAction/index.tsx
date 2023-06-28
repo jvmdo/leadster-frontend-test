@@ -34,7 +34,7 @@ export function CallToAction({ rating }: CallToActionProps) {
           <div className="action">
             <BrandButton>Ver demonstração</BrandButton>
             <Image
-              src="/selo.png"
+              src="/images/selo.png"
               width={205}
               height={73}
               alt="Selo top 10 apps mais usados - RD Station"
@@ -44,7 +44,7 @@ export function CallToAction({ rating }: CallToActionProps) {
             <p>Não é necessário cartão de crédito</p>
             <p>
               {/* <Rating value={rating} fractions={10} readOnly /> 😪 */}
-              <Image src="/rating.webp" width={92} height={16} alt="" />
+              <Image src="/images/rating.webp" width={92} height={16} alt="" />
               {rating}/5 média de satisfação
             </p>
           </div>
