@@ -1,20 +1,23 @@
+import path from 'path'
+import { promises as fs } from 'fs'
 import { Video } from '@/types'
 
-function getBaseUrl(process: any) {
-  const isProduction = process.env.NODE_ENV === 'production'
+export async function fetchVideos(): Promise<Video[]> {
+  try {
+    const filePath = path.join(process.cwd(), 'public/data/videos.json')
+    const jsonContent = await fs.readFile(filePath, 'utf-8')
+    const videos = JSON.parse(jsonContent)
 
-  if (isProduction) {
-    return 'https://leadster-jvmdo.vercel.app'
+    return videos
+  } catch (error) {
+    console.error(error)
   }
 
-  return 'http://localhost:3000'
-}
-
-export async function fetchVideos(): Promise<Video[]> {
-  return await (await fetch(`${getBaseUrl(process)}/data/videos.json`)).json()
+  return []
 }
 
 export async function fetchFiltersOptions() {
+  // This delay does not affect the user since this function will not run on request
   await new Promise((resolve) => setTimeout(resolve, Math.random() * 300 + 300))
   const filtersOptions = [
     'Agências',
